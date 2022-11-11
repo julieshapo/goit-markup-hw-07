@@ -1,0 +1,46 @@
+.subscription {
+
+    &-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    }
+
+    &-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: var(--footer-bg);
+    color: var(--header-bg);
+    }
+
+    &-btn {
+    min-width: 200px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--accent-color);
+    color: var(--header-bg);
+
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+
+    transform: box-shadow var(--trans-duration) var(--cubic);
+    }
+
+    &-btn .send-icon {
+    fill: var(--header-bg);
+    margin-left: 10px;
+    }
+
+    &-btn:hover,
+    &-btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}

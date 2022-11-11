@@ -15,14 +15,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="header">
       <div class="container header-items">
         <nav class="site-nav">
-          <a href="./index.html" class="logo-header link"
+          <a href="./index.html" class="logo header-logo link"
             >Web<span class="logo-black">Studio</span></a
           >
           <ul class="site-nav-list list">
@@ -40,7 +40,7 @@
           </ul>
         </nav>
 
-        <ul class="contacts list">
+        <ul class="contact list">
           <li class="contact-item">
             <a class="contact-link link" href="mailto:info@devstudio.com"
               ><svg class="contact-icon" width="16" height="12">
@@ -64,32 +64,28 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section-title projects visually-hidden">Портфоліо</h1>
-          <ul class="projects-filter list">
-            <li class="projects-item-button">
-              <button type="button" class="btn projects-button current">
+          <h1 class="section-title visually-hidden">Портфоліо</h1>
+          <ul class="filter list">
+            <li class="filter-item">
+              <button type="button" class="btn filter-button current">
                 Усі
               </button>
             </li>
-            <li class="projects-item-button">
-              <button type="button" class="btn projects-button">
-                Веб-сайти
-              </button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-button">Веб-сайти</button>
             </li>
-            <li class="projects-item-button">
-              <button type="button" class="btn projects-button">Додатки</button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-button">Додатки</button>
             </li>
-            <li class="projects-item-button">
-              <button type="button" class="btn projects-button">Дизайн</button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-button">Дизайн</button>
             </li>
-            <li class="projects-item-button">
-              <button type="button" class="btn projects-button">
-                Маркетинг
-              </button>
+            <li class="filter-item">
+              <button type="button" class="btn filter-button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="project-list list">
+          <ul class="project list">
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-thumb">
@@ -324,11 +320,12 @@
         </div>
       </section>
     </main>
+
     <!-- Футер -->
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer-address">
-          <a href="./index.html" class="logo-footer link"
+          <a href="./index.html" class="logo footer-logo link"
             >Web<span class="logo-white">Studio</span></a
           >
           <address class="address">
@@ -357,9 +354,10 @@
             </ul>
           </address>
         </div>
-        <div class="footer-socials">
-          <h3 class="footer-title">Приєднуйтесь</h3>
-          <ul class="footer-socials-list list">
+
+        <div class="footer-social">
+          <p class="footer-call-to-action">Приєднуйтесь</p>
+          <ul class="footer-social-list list">
             <li class="footer-social-item">
               <a href="" class="footer-social-link">
                 <svg class="footer-social-icon" width="20" height="20">
@@ -390,8 +388,9 @@
             </li>
           </ul>
         </div>
-        <form class="subscription-form">
-          <h3 class="footer-title">Підпишіться на розсилку</h3>
+
+        <form class="subscription">
+          <p class="footer-call-to-action">Підпишіться на розсилку</p>
           <div class="subscription-wrapper">
             <input
               type="email"

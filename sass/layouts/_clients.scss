@@ -1,0 +1,35 @@
+
+.client {
+  display: flex;
+  gap: 30px;
+
+    &-item {
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+    }
+
+    &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--client-section-grey);
+    border-radius: 4px;
+    fill: var(--client-section-grey);
+
+    transition: border-color var(--trans-duration) var(--cubic),
+        fill var(--trans-duration) var(--cubic);
+    }
+
+    /* &-icon {
+    fill: currentColor;
+    } */
+
+    &-link:hover,
+    &-link:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+    }
+}
+
