@@ -12,8 +12,8 @@
 
   visibility: visible;
   opacity: 1;
-  transition: opacity var(--trans-duration) var(--cubic),
-    visibility var(--trans-duration) var(--cubic);
+  transition: opacity  $transitionDuration  $cubicBezier,
+    visibility  $transitionDuration  $cubicBezier;
 
     &.is-hidden {
     visibility: hidden;

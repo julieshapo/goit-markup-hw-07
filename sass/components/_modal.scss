@@ -6,13 +6,13 @@
   max-width: 528px;
   padding: 40px;
 
-  background-color: var(--header-bg);
+  background-color: $colorHeaderBg;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--trans-duration) var(--cubic);
+  transition: transform  $transitionDuration  $cubicBezier;
 
     &-title {
     font-weight: 700;
@@ -21,7 +21,7 @@
     text-align: center;
     margin-bottom: 12px;
 
-    color: var(--secondary-text-color);
+    color: $colorSecondaryText;
     }
 
     &-field {
@@ -42,7 +42,7 @@
     left: 15px;
     top: 50%;
 
-    transition: fill var(--trans-duration) var(--cubic);
+    transition: fill  $transitionDuration  $cubicBezier;
     }
 
     &-input {
@@ -55,15 +55,15 @@
     padding-left: 42px;
     outline: transparent;
 
-    transition: border-color var(--trans-duration) var(--cubic);
+    transition: border-color  $transitionDuration  $cubicBezier;
     }
 
     &-input:focus {
-    border-color: var(--accent-color);
+    border-color: $colorAccent;
     }
 
     &-input:focus + .modal-user-icon {
-    fill: var(--accent-color);
+    fill: $colorAccent;
     }
 
     &-comment {
@@ -77,11 +77,11 @@
     outline: transparent;
     resize: none;
 
-    transition: border-color var(--trans-duration) var(--cubic);
+    transition: border-color  $transitionDuration  $cubicBezier;
     }
 
     &-comment:focus {
-    border-color: var(--accent-color);
+    border-color: $colorAccent;
     }
 
     &-comment::placeholder {
@@ -121,7 +121,7 @@
 
   opacity: 1;
 
-  transition: opacity var(--trans-duration) var(--cubic);
+  transition: opacity  $transitionDuration  $cubicBezier;
 }
 
 &-icon {
@@ -133,9 +133,9 @@
 
   opacity: 0;
 
-  fill: var(--accent-color);
+  fill: $colorAccent;
 
-  transition: opacity var(--trans-duration) var(--cubic);
+  transition: opacity  $transitionDuration  $cubicBezier;
 }
 
 &:checked ~ &-icon-none {
@@ -147,7 +147,7 @@
 }
 
 &-link {
-  color: var(--accent-color);
+  color: $colorAccent;
   margin-left: 5px;
 }
 }
@@ -161,14 +161,14 @@
 
   display: flex;
 
-  background-color: var(--accent-color);
-  color: var(--header-bg);
+  background-color: $colorAccent;
+  color: $colorHeaderBg;
 
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.06em;
 
-  transform: box-shadow var(--trans-duration) var(--cubic);
+  transform: box-shadow  $transitionDuration  $cubicBezier;
 
     &:hover,
     &:focus {
@@ -193,11 +193,11 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: fill var(--trans-duration) var(--cubic);
+  transition: fill  $transitionDuration  $cubicBezier;
 
     &:hover,
     &:focus {
-    fill: var(--accent-color);
+    fill: $colorAccent;
     }
 }
 

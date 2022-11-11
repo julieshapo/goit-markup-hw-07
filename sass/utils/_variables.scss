@@ -1,19 +1,23 @@
-:root {
-  --header-bg: #ffffff;
-  --header-frame: #ececec;
-  --logo-black: #000000;
-  --primary-text-color: #757575;
-  --secondary-text-color: #212121;
-  --accent-color: #2196f3;
-  --secondary-bg: #f5f4fa;
-  --container-bg: #eeeeee;
-  --client-section-grey: #afb1b8;
-  --footer-bg: #2f303a;
-  --text-footer-color: rgba(255, 255, 255, 0.6);
-  --hero-bg: #c4c4c4;
-  --hero-bg-gradient: rgba(47, 48, 58, 0.4);
-  --social-links-color: #afb1b8;
+  $colorHeaderBg: #ffffff;
+  $colorHeaderFrame: #ececec;
 
-  --trans-duration: 250ms;
-  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  $colorLogoBlack: #000000;
+
+  $colorPrimaryText: #757575;
+  $colorSecondaryText: #212121;
+
+  $colorAccent: #2196f3;
+
+  $colorSecondaryBg: #f5f4fa;
+  $colorTeamBg: #eeeeee;
+
+  $colorHeroBg: #c4c4c4;
+  $colorHeroBgGradient: rgba(47, 48, 58, 0.4);
+
+  $colorClientBg: #afb1b8;
+
+  $colorFooterBg: #2f303a;
+  $colorFooterText: rgba(255, 255, 255, 0.6);
+
+  $transitionDuration: 250ms;
+  $cubicBezier: cubic-bezier(0.4, 0, 0.2, 1);

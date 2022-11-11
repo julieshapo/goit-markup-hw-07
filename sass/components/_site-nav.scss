@@ -15,23 +15,23 @@
 &-link.link {
   position: relative;
 
-  color: var(--secondary-text-color);
+  color: $colorSecondaryText;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: color var(--trans-duration) var(--cubic);
+  transition: color  $transitionDuration  $cubicBezier;
 }
 
 &-link:hover,
 &-link:focus {
-  color: var(--accent-color);
+  color: $colorAccent;
 }
 
 &-link.current {
-  color: var(--accent-color);
+  color: $colorAccent;
 }
 
 &-link.current::after {
@@ -45,7 +45,7 @@
   height: 4px;
 
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: $colorAccent;
 }
 }
 

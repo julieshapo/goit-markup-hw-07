@@ -2,11 +2,11 @@
   text-align: center;
   background-image: linear-gradient(
       to right,
-      var(--hero-bg-gradient),
-      var(--hero-bg-gradient)
+      $colorHeroBgGradient,
+      $colorHeroBgGradient
     ),
     url(../images/hero-bg-image.jpg);
-  background-color: var(--hero-bg);
+  background-color: $colorHeroBg;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,7 +21,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  color: var(--header-bg);
+  color: $colorHeaderBg;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -36,14 +36,14 @@
 
   display: flex;
 
-  background-color: var(--accent-color);
-  color: var(--header-bg);
+  background-color: $colorAccent;
+  color: $colorHeaderBg;
 
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.06em;
 
-  transform: box-shadow var(--trans-duration) var(--cubic);
+  transform: box-shadow  $transitionDuration  $cubicBezier;
 }
 
 &-button:hover,

@@ -1,6 +1,6 @@
 .header {
-  background-color: var(--header-bg);
-  border-bottom: 1px solid var(--header-frame);
+  background-color: $colorHeaderBg;
+  border-bottom: 1px solid $colorHeaderFrame;
   padding-top: 24px;
   padding-bottom: 25px;
   height: 80px;

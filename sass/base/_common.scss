@@ -1,6 +1,6 @@
 body {
-  background-color: var(--header-bg);
-  color: var(--primary-text-color);
+  background-color: $colorHeaderBg;
+  color: $colorPrimaryText;
 
   font-family: Roboto, sans-serif;
   font-size: 14px;

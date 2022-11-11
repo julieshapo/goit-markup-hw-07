@@ -2,16 +2,16 @@
   display: block;
 
   font-family: Raleway, sans-serif;
-  color: var(--accent-color);
+  color: $colorAccent;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 
   &-black {
-    color: var(--logo-black);
+    color: $colorLogoBlack;
   }
 
   &-white {
-    color: var(--header-bg);
+    color: $colorHeaderBg;
   }
 }

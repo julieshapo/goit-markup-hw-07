@@ -11,12 +11,12 @@
     display: flex;
     align-items: center;
 
-    color: var(--primary-text-color);
+    color: $colorPrimaryText;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    transition: color var(--trans-duration) var(--cubic);
+    transition: color  $transitionDuration  $cubicBezier;
     }
 
     &-icon {
@@ -26,7 +26,7 @@
 
     &-link:hover,
     &-link:focus {
-    color: var(--accent-color);
+    color: $colorAccent;
     }
 }
 

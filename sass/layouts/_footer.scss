@@ -2,7 +2,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--footer-bg);
+  background-color:  $colorFooterBg;
 
     &-flex {
     display: flex;
@@ -17,7 +17,7 @@
 
     &-call-to-action {
     margin-bottom: 20px;
-    color: var(--header-bg);
+    color: $colorHeaderBg;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -35,25 +35,25 @@
     }
 
     &-link.primary {
-    color: var(--header-bg);
+    color: $colorHeaderBg;
 
-    transition: color var(--trans-duration) var(--cubic);
+    transition: color  $transitionDuration  $cubicBezier;
     }
 
     &-link.secondary {
-    color: var(--text-footer-color);
+    color:  $colorFooterText;
 
-    transition: color var(--trans-duration) var(--cubic);
+    transition: color  $transitionDuration  $cubicBezier;
     }
 
     &-link.primary:hover,
     .address-link.primary:focus {
-    color: var(--accent-color);
+    color: $colorAccent;
     }
 
     &-link.secondary:hover,
     &-link.secondary:focus {
-    color: var(--accent-color);
+    color: $colorAccent;
     }
 
 }
@@ -80,18 +80,18 @@
     height: 100%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--header-bg);
+    fill: $colorHeaderBg;
 
-    transition: background-color var(--trans-duration) var(--cubic);
+    transition: background-color  $transitionDuration  $cubicBezier;
     }
 
     /* &-icon {
-    fill: var(--header-bg);
+    fill: $colorHeaderBg;
     } */
 
     &-link:hover,
     &-link:focus {
-    background-color: var(--accent-color);
+    background-color: $colorAccent;
     }
 
 }

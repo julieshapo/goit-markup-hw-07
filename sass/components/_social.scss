@@ -15,11 +15,11 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: var(--header-bg);
-    fill: var(--client-section-grey);
+    background-color: $colorHeaderBg;
+    fill:  $colorClientBg;
 
-    transition: background-color var(--trans-duration) var(--cubic),
-        fill var(--trans-duration) var(--cubic);
+    transition: background-color  $transitionDuration  $cubicBezier,
+        fill  $transitionDuration  $cubicBezier;
     }
 
     /* &-icon {
@@ -28,8 +28,8 @@
 
     &-link:hover,
     &-link:focus {
-    background-color: var(--accent-color);
-    fill: var(--header-bg);
+    background-color: $colorAccent;
+    fill: $colorHeaderBg;
     }
 }
 

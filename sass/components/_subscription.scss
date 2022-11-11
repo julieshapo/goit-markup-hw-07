@@ -12,8 +12,8 @@
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    background-color: var(--footer-bg);
-    color: var(--header-bg);
+    background-color:  $colorFooterBg;
+    color: $colorHeaderBg;
     }
 
     &-btn {
@@ -24,18 +24,18 @@
     align-items: center;
     justify-content: center;
 
-    background-color: var(--accent-color);
-    color: var(--header-bg);
+    background-color: $colorAccent;
+    color: $colorHeaderBg;
 
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.06em;
 
-    transform: box-shadow var(--trans-duration) var(--cubic);
+    transform: box-shadow  $transitionDuration  $cubicBezier;
     }
 
     &-btn .send-icon {
-    fill: var(--header-bg);
+    fill: $colorHeaderBg;
     margin-left: 10px;
     }
 

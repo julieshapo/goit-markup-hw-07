@@ -13,27 +13,27 @@
     padding: 6px 22px;
     min-width: fit-content;
 
-    background-color: var(--secondary-bg);
-    color: var(--secondary-text-color);
+    background-color: $colorSecondaryBg;
+    color: $colorSecondaryText;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.03em;
 
-    transition: background-color var(--trans-duration) var(--cubic),
-        color var(--trans-duration) var(--cubic),
-        box-shadow var(--trans-duration) var(--cubic);
+    transition: background-color  $transitionDuration  $cubicBezier,
+        color  $transitionDuration  $cubicBezier,
+        box-shadow  $transitionDuration  $cubicBezier;
     }
 
     &-button:hover,
     &-button:focus {
-    background-color: var(--accent-color);
-    color: var(--header-bg);
+    background-color: $colorAccent;
+    color: $colorHeaderBg;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     &-button.current {
-    background-color: var(--accent-color);
-    color: var(--header-bg);
+    background-color: $colorAccent;
+    color: $colorHeaderBg;
     }
 }
 
@@ -51,7 +51,7 @@
     &-link {
     display: block;
     box-shadow: none;
-    transition: box-shadow var(--trans-duration) var(--cubic);
+    transition: box-shadow  $transitionDuration  $cubicBezier;
     }
 
     &-thumb {
@@ -71,7 +71,7 @@
     background-color: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
-    transition: transform var(--trans-duration) var(--cubic);
+    transition: transform  $transitionDuration  $cubicBezier;
     }
 
     &-link:hover,
@@ -88,19 +88,19 @@
     &-text {
     font-size: 18px;
     line-height: 1.56;
-    color: var(--header-bg);
+    color: $colorHeaderBg;
     }
 
     &-description {
     padding: 20px 24px;
-    border: 1px solid var(--container-bg);
+    border: 1px solid $colorTeamBg;
     border-top: transparent;
-    background-color: var(--header-bg);
+    background-color: $colorHeaderBg;
     }
 
     &-title {
     margin-bottom: 4px;
-    color: var(--secondary-text-color);
+    color: $colorSecondaryText;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -109,7 +109,7 @@
     &-type {
     font-size: 16px;
     line-height: 1.8;
-    color: var(--primary-text-color);
+    color: $colorPrimaryText;
     }
 }
 
