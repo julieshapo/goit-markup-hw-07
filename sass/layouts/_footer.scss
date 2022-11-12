@@ -5,9 +5,11 @@
   background-color:  $colorFooterBg;
 
     &-flex {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @include centeredFlex($type, baseline, space-between);
+
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-between;
     }
 
     &-logo {
@@ -73,9 +75,11 @@
     }
 
     &-link {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex(inline-flex);
+        
+    // display: inline-flex;
+    // justify-content: center;
+    // align-items: center;
     width: 100%;
     height: 100%;
     border-radius: 50%;

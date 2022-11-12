@@ -10,6 +10,8 @@
     } */
 
     &-button {
+    @extend %btn;
+    
     padding: 6px 22px;
     min-width: fit-content;
 

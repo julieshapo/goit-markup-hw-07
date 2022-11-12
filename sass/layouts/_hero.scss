@@ -30,6 +30,8 @@
 }
 
 &--button {
+  @extend %btn;
+  
   padding: 10px 32px;
   min-width: 216px;
   margin: 0 auto;
