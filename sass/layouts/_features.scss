@@ -3,28 +3,28 @@
   display: flex;
   gap: 30px;
 
-  &-item {
-  flex-basis: calc((100% - 90px) / 4);
-}
+  &--item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 
-&-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
+  &--pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 
-&-title {
-  margin-bottom: 10px;
-  color: $colorSecondaryText;
-}
+  &--title {
+    margin-bottom: 10px;
+    color: $colorSecondaryText;
+  }
 
-&-text {
-  line-height: 1.71;
-}
+  &--text {
+    line-height: 1.71;
+  }
 }
 

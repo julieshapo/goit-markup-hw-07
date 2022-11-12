@@ -80,8 +80,8 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    &-link:hover .project-overlay,
-    &-link:focus .project-overlay {
+    &-link:hover &-overlay,
+    &-link:focus &-overlay {
     transform: translateY(0);
     }
 
